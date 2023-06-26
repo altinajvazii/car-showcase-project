@@ -148,3 +148,68 @@ header {
     color: #5c5e62;
     margin: 0.3em 0;
 }
+
+.stats {
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.stats>div {
+    width: 10em;
+}
+
+.stats h2 {
+    font-size: 2.3em;
+}
+
+.stats h2 span {
+    font-size: 0.5em;
+}
+
+.btn {
+    color: #fff;
+    border: 3px #fff solid;
+    padding: 0.6em 0;
+    width: 12em;
+    border-radius: 3em;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.arrow {
+    width: 1.4em;
+    animation: arrow 5s ease infinite;
+    cursor: pointer;
+}
+
+#video {
+    padding: 6em 2em;
+}
+
+#video video {
+    width: 100%;
+    height: 20vw;
+    max-width: 1200px;
+}
+
+.gauge img {
+    width: 3.5em;
+}
+
+.specs {
+    padding: 0 2em;
+}
+
+.specs ul {
+    max-width: 600px;
+    margin: 0 auto;
+}
