@@ -28,3 +28,56 @@ a {
 p {
     max-width: 30em;
 }
+
+header {
+    height: 100vh;
+    min-height: 40em;
+    background: url(assets/hero.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/*Set flex layouts*/
+
+.navbar,
+.header-body,
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#video,
+.gauge,
+.about-text,
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    color: #111;
+    padding: 1em 2em;
+}
+
+.navbar a,
+.sidebar a {
+    color: #111;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a,
+.menu-btn {
+    transition: 0.3s;
+    padding: 0.3em 0.8em;
+    border-radius: 0.5em;
+}
+
+.navbar li a:hover,
+.menu-btn:hover {
+    background: rgba(191, 191, 191, 0.5);
+}
