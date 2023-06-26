@@ -81,3 +81,70 @@ header {
 .menu-btn:hover {
     background: rgba(191, 191, 191, 0.5);
 }
+
+.brand {
+    width: 7em;
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.menu-btn-mobile {
+    display: none;
+}
+
+.sidebar {
+    color: #111;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -20em;
+    padding: 2em;
+    min-width: 20em;
+    height: 100vh;
+    overflow: scroll;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 0.4s ease-in-out;
+}
+
+.close-btn {
+    cursor: pointer;
+    text-align: right;
+}
+
+.sidebar li {
+    margin: 1.5em 0;
+}
+
+.sidebar-backdrop {
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+}
+
+.header-body {
+    flex-direction: column;
+    text-align: center;
+    height: 90%;
+    padding: 0 2em;
+}
+
+.header-body p {
+    margin: 1em auto 3em auto;
+}
+
+.title {
+    font-size: 3.4em;
+    color: #5c5e62;
+    margin: 0.3em 0;
+}
