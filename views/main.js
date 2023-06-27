@@ -26,3 +26,35 @@ function sidebarOpen() {
     //Disable scroll on body
     document.body.classList.add("sidebar-open-body");
 }
+
+//Add the close button click event
+closeBtn.addEventListener("click", () => {
+    //Change sidebar position
+    sidebar.style.right = "-20em";
+    //Hide backdrop with a smooth transition
+    backdrop.style.opacity = "0";
+    //Hide backdrop after the transition is done
+    setTimeout(() => {
+        backdrop.style.display = "none";
+    }, 300);
+    //Make the body scrollable again
+    document.body.classList.remove("sidebar-open-body");
+});
+
+//Custom scroll event (Changing the image)
+//Get elements from DOM
+const text = document.querySelector(".roof-text");
+const roofImg = document.querySelector(".banner-img");
+
+//Add a scroll event to the document
+window.addEventListener("scroll", () => {
+    //When the text element is animated
+    if (text.classList.contains("aos-animate")) {
+        //Show the second roof image, with glass roof
+        roofImg.classList.add("roof-2");
+        //When the animation is removed
+    } else {
+        //Revert back to the first image
+        roofImg.classList.remove("roof-2");
+    }
+});
