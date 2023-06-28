@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="aos/aos.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .image-container {
+            float: left;
+            width: 50%;
+        }
+        
+        .text-container {
+            float: right;
+            width: 50%;
+            padding: 0 2rem;
+            text-align: justify;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        button[data-aos="fade-up"] {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        
+        button[data-aos="fade-up"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
+            <img src="assets/side.jpg" alt="Picture" style="width: 100%" />
+        </div>
+        <div class="text-container" data-aos="fade-left" data-aos-duration="1000">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Your Roadster</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">
+                Roadster reservations require an initial $5,000 credit card payment, plus a $45,000 wire transfer payment due in 10 days. Reservations are not final until the wire transfer payment is received.
+            </p>
+            <div>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    <strong>1 Roadster Reservation</strong>
+                    <br />
+                    <br /> Due within 10 days <br /> $45,000
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    <strong>Due Today</strong>
+                    <br /> $5,000
+                </p>
+            </div>
+            <button data-aos="fade-up" data-aos-duration="1000">
+          Order with Card
+        </button>
+        </div>
+    </div>
+
+    <script src="aos/aos.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

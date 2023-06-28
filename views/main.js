@@ -58,3 +58,34 @@ window.addEventListener("scroll", () => {
         roofImg.classList.remove("roof-2");
     }
 });
+
+// Get the Reserve Now button element
+const reserveBtn = document.getElementById("reserve-btn");
+
+// Add click event listener to the button
+reserveBtn.addEventListener("click", () => {
+    // Show loader animation
+    showLoader();
+
+    // Delay the redirection to simulate loading
+    setTimeout(() => {
+        // Redirect to the reservation.html page
+        window.location.href = "reservation.html";
+    }, 1000); // Adjust the delay time (in milliseconds) as needed
+});
+
+// Function to show loader animation
+function showLoader() {
+    // Create a loader element
+    const loader = document.createElement("div");
+    loader.classList.add("loader");
+
+    // Add loader element to the body
+    document.body.appendChild(loader);
+
+    // Initialize AOS animations on the loader
+    AOS.init({
+        target: loader,
+        once: true,
+    });
+}
