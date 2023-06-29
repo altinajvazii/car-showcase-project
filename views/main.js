@@ -71,7 +71,7 @@ reserveBtn.addEventListener("click", () => {
     setTimeout(() => {
         // Redirect to the reservation.html page
         window.location.href = "reservation.html";
-    }, 1000); // Adjust the delay time (in milliseconds) as needed
+    }, 300); // Adjust the delay time (in milliseconds) as needed
 });
 
 // Function to show loader animation
