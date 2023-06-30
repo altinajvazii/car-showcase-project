@@ -27,3 +27,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## How to play
+
+If you want to be able to play the game, open the index.html file via live server.

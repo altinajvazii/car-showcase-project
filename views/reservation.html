@@ -132,7 +132,7 @@
                 <button data-aos="fade-up" data-aos-duration="1000">
             Order with Card
           </button>
-                <button data-aos="fade-up" data-aos-duration="1000">
+                <button id="goToGame" data-aos="fade-up" data-aos-duration="1000">
             Try our online game
           </button>
             </div>
@@ -185,6 +185,13 @@
         });
 
         setInterval(nextSlide, 5000);
+
+        // Get the Reserve Now button element
+        const gameBtn = document.getElementById("goToGame");
+        // Add click event listener to the button
+        gameBtn.addEventListener("click", () => {
+            window.location.href = "./game/index.html";
+        });
     </script>
 </body>
 

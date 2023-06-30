@@ -1,0 +1,4 @@
+node_modules
+./views/games/scripts/pixi.js
+./views/games/scripts/pixi.min.js
+package-lock.json
